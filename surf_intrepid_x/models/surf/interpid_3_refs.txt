@@ -1,0 +1,7 @@
+importfilelist
+{
+	"file"	"materials\models\surf\ete_2.vmt"
+	"file"	"materials\models\surf\ite_1.vmt"
+	"file"	"materials\models\surf\concrete_black.vmt"
+	"file"	"materials\models\surf\ground.vmt"
+}

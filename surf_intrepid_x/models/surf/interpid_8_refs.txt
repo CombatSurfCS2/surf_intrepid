@@ -1,0 +1,8 @@
+importfilelist
+{
+	"file"	"materials\models\surf\unbreakable_glass.vmt"
+	"file"	"materials\models\surf\ete_2.vmt"
+	"file"	"materials\models\surf\ground.vmt"
+	"file"	"materials\models\surf\ite_1.vmt"
+	"file"	"materials\models\surf\concrete_black.vmt"
+}

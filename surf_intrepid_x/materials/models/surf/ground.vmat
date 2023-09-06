@@ -1,0 +1,25 @@
+"Layer0"
+{
+	"Shader"		"csgo_vertexlitgeneric.vfx"
+	"TextureColor"		"materials/models/surf/ground_color.tga"
+	"TextureNormal"		"materials/models/surf/white_normal_3_normal.tga"
+	"TextureAmbientOcclusion"		"materials/default/default_ao.tga"
+	"TextureMetalness"		"[0.000000 0.000000 0.000000]"
+	"F_SPECULAR_INDIRECT"		"1"
+	"TextureRoughness"		"[0.050000 0.050000 0.050000 1.000000]"
+	"SystemAttributes"
+	{
+		"PhysicsSurfaceProperties"		"concrete"
+	}
+	"legacy_import"
+	{
+		"VertexLitGeneric"
+		{
+			"$model"		"1"
+			"$basetexture"		"models/surf/ground"
+			"$envmap"		"env_cubemap"
+			"$surfaceprop"		"concrete"
+			"$bumpmap"		"models/surf/white_normal_3"
+		}
+	}
+}
