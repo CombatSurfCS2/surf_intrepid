@@ -1,32 +1,65 @@
-"Layer0"
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
 {
-	"Shader"		"csgo_lightmappedgeneric.vfx"
-	"TextureLayer1Color"		"materials/metal/metalfloor005a_color.tga"
-	"TextureLayer1Roughness"		"materials/default/default_rough_s1import.tga"
-	"TextureLayer1AmbientOcclusion"		"materials/default/default_ao.tga"
-	"F_LAYERS"		"0"
-	"g_vLayer1Tint"		"[1.000000 1.000000 1.000000]"
-	"F_TEXTURETRANSFORMS"		"0"
-	"TextureLayer1Detail"		"materials/detail/metal_detail_01_color.tga"
-	"g_vLayer1DetailScale"		"[4.283000 4.283000]"
-	"g_vLayer1DetailTintAndBlend"		"[1.000000 1.000000 1.000000 0.650000]"
-	"F_DETAILTEXTURE"		"1"
-	"F_DETAILBLENDMODE"		"0"
-	"SystemAttributes"
+	shader "csgo_lightmappedgeneric.vfx"
+
+	//---- Detail Textures ----
+	F_DETAILTEXTURE 1 // Layer 1 Detail Only
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_flVertexColorOpacityScale "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Lighting ----
+	g_flMetalness "0.000"
+
+	//---- PBR 1 ----
+	g_vLayer1DetailScale "[4.283 4.283]"
+	g_vLayer1DetailTintAndBlend "[1.000 1.000 1.000 0.650]"
+	g_vLayer1Tint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureLayer1AmbientOcclusion "materials/default/default_ao.tga"
+	TextureLayer1Color "materials/textures/metal/metalfloor005a_color.jpg"
+	TextureLayer1Detail "materials/textures/detail/metal_detail_01_color.jpg"
+	TextureLayer1Normal "materials/default/default_normal.tga"
+	TextureLayer1Roughness "materials/default/default_rough.tga"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	SystemAttributes
 	{
-		"PhysicsSurfaceProperties"		"metal"
+		PhysicsSurfaceProperties "metal"
 	}
-	"legacy_import"
+
+
+	VariableState
 	{
-		"LightmappedGeneric"
+		"Color"
 		{
-			"$basetexture"		"Metal/metalfloor005a"
-			"$surfaceprop"		"metal"
-			"$detail"		"detail\metal_detail_01"
-			"$detailscale"		"4.283000"
-			"$detailblendfactor"		"0.650000"
-			"$detailblendmode"		"0"
-			"%keywords"		"borealis,combine"
+		}
+		"Fog"
+		{
+		}
+		"Lighting"
+		{
+			"Metalness" 0
+		}
+		"PBR 1"
+		{
+			"Albedo" 0
+			"Normal" 0
+			"Roughness" 0
+			"Ambient Occlusion" 0
+			"Detail" 0
+		}
+		"Texture Address Mode"
+		{
 		}
 	}
 }
